@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>The Crystal Crusader</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
+        crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
+    <script defer src="https://use.fontawesome.com/releases/v5.0.12/js/all.js" integrity="sha384-Voup2lBiiyZYkRto2XWqbzxHXwzcm4A5RfdfG6466bu5LqjwwrjXCMBQBLMWh7qR"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script src="assets/javascript/interactive.js"></script>
+
+</head>
+
+<body>
+    <div class="bg">
+        <header class="head">
+            <h1>Welcome to The Crystal Crusader!</h1>
+        </header>
+
+        <section class="intro container">
+            <h4>How to play:</h4>
+            <p>Click on any of the crystal buttons to collect its' secret value to your grand total.</p>
+            <h4>Objective: </h4>
+            <p>Make your grand total match the target and you win. If you go over, you lose.</p>
+        </section>
+
+        <section class="main container">
+            <div class="jumbotron">
+
+                <div class="row">
+                    <div class="col-md-1"></div>
+                    <div class="col-md-4">
+                        <h2>Your total is:
+                            <span id="grandTotal"></span>
+                        </h2>
+
+                    </div>
+                    <div class="col-md-2"></div>
+                    <div class="col-md-4">
+                        <h2>Your target is: 
+                            <span id="target"></span>
+                        </h2>
+
+                    </div>
+                    <div class="col-md-1"></div>
+                </div>
+
+                <br>
+                <br>
+
+                <div class="row">
+                    <div class="col-md-3">
+                        <input type="image" src="assets/images/crystal_one.jpg" alt="Submit" width="120" height="120" id="hiddenOne" class="crystalCollection">
+                    </div>
+                    <div class="col-md-3" id="crystalTwo">
+                        <input type="image" src="assets/images/crystal_two.jpg" alt="Submit" width="120" height="120" id="hiddenTwo" class="crystalCollection">
+                    </div>
+                    <div class="col-md-3" id="crystalThree">
+                        <input type="image" src="assets/images/crystal_three.jpg" alt="Submit" width="120" height="120" id="hiddenThree" class="crystalCollection">
+                    </div>
+                    <div class="col-md-3" id="crystalFour">
+                        <input type="image" src="assets/images/crystal_four.jpg" alt="Submit" width="120" height="120" id="hiddenFour" class="crystalCollection">
+                    </div>
+                </div>
+            </div>
+
+            <div class="jumbotron">
+                <div class="row">
+                    <div class="col-md-1"></div>
+                    <div class="col-md-4">
+                        <p class="winLoss" id="wins">Wins: 
+                            <span id="winChange"></span>
+                        </p>
+                    </div>
+                    <div class="col-md-2"></div>
+                    <div class="col-md-4">
+                        <p class="winLoss" id="losses">Losses:
+                            <span id="lossChange"></span>
+                        </p>
+                    </div>
+                    <div class="col-md-1"></div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+</body>
+
+</html>
