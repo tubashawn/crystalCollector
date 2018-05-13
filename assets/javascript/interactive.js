@@ -5,8 +5,8 @@ var total = 0;
 
 
 $(document).ready(function () {
-    $("#winChange").text(wins);
-    $("#lossChange").text(losses);
+    $("#winChange").text(" " + wins);
+    $("#lossChange").text(" " + losses);
     update();
     gamePlay();
     winLose();
@@ -49,12 +49,12 @@ function winLose() {
     if (total == randomTarget) {
         alert("You win");
         wins++;
-        $("#winChange").text(wins);
+        $("#winChange").text(" " + wins);
         kickoff();
     } else if (total > randomTarget) {
         alert("You lose!");
         losses++;
-        $("#lossChange").text(losses);
+        $("#lossChange").text(" " + losses);
         kickoff();
     }
 

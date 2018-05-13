@@ -4,7 +4,7 @@ body, html {
 }
 
 .bg {
-    background-color: pink;
+   
     background-image: url("../images/cave.jpg");
     /* height: 100%; */
     background-position: center;
@@ -12,6 +12,6 @@ body, html {
     background-size: cover;
 }
 
-header {
-    z-index: 0;
+.numberRow {
+    
 }
