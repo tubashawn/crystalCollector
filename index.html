@@ -20,16 +20,24 @@
 
 <body>
     <div class="bg">
-        <header class="head">
-            <h1>Welcome to The Crystal Crusader!</h1>
+        <header class="head navbar navbar-dark">
+            <h1 class="navbar-brand">Welcome to The Crystal Crusader!</h1>
         </header>
 
         <section class="intro container">
-            <h4>How to play:</h4>
-            <p>Click on any of the crystal buttons to collect its' secret value to your grand total.</p>
-            <h4>Objective: </h4>
-            <p>Make your grand total match the target and you win. If you go over, you lose.</p>
+            <div class="row">
+                <div class="card col-md-5">
+                    <h4 class="card-header">How to play:</h4>
+                    <p class="card-body">Click on any of the crystal buttons to collect its' secret value to your grand total.</p>
+                </div>
+                <div class="col-md-2"></div>
+                <div class="card col-md-5">
+                    <h4 class="card-header">Objective: </h4>
+                    <p class="card-body">Make your grand total match the target and you win. If you go over, you lose.</p>
+                </div>
+            </div>
         </section>
+        <br><br>
 
         <section class="main container">
             <div class="jumbotron">
@@ -44,7 +52,7 @@
                     </div>
                     <div class="col-md-2"></div>
                     <div class="col-md-4">
-                        <h2>Your target is: 
+                        <h2>Your target is:
                             <span id="target"></span>
                         </h2>
 
@@ -57,16 +65,16 @@
 
                 <div class="row">
                     <div class="col-md-3">
-                        <input type="image" src="assets/images/crystal_one.jpg" alt="Submit" width="120" height="120" id="hiddenOne" class="crystalCollection">
+                        <input type="image" src="assets/images/crystal_one.jpg" alt="Submit" width="200" height="200" id="hiddenOne" class="crystalCollection">
                     </div>
                     <div class="col-md-3" id="crystalTwo">
-                        <input type="image" src="assets/images/crystal_two.jpg" alt="Submit" width="120" height="120" id="hiddenTwo" class="crystalCollection">
+                        <input type="image" src="assets/images/crystal_two.jpg" alt="Submit" width="200" height="200" id="hiddenTwo" class="crystalCollection">
                     </div>
                     <div class="col-md-3" id="crystalThree">
-                        <input type="image" src="assets/images/crystal_three.jpg" alt="Submit" width="120" height="120" id="hiddenThree" class="crystalCollection">
+                        <input type="image" src="assets/images/crystal_three.jpg" alt="Submit" width="200" height="200" id="hiddenThree" class="crystalCollection">
                     </div>
                     <div class="col-md-3" id="crystalFour">
-                        <input type="image" src="assets/images/crystal_four.jpg" alt="Submit" width="120" height="120" id="hiddenFour" class="crystalCollection">
+                        <input type="image" src="assets/images/crystal_four.jpg" alt="Submit" width="200" height="200" id="hiddenFour" class="crystalCollection">
                     </div>
                 </div>
             </div>
@@ -75,7 +83,7 @@
                 <div class="row">
                     <div class="col-md-1"></div>
                     <div class="col-md-4">
-                        <p class="winLoss" id="wins">Wins: 
+                        <p class="winLoss" id="wins">Wins:
                             <span id="winChange"></span>
                         </p>
                     </div>
@@ -90,6 +98,7 @@
             </div>
         </section>
     </div>
+    <br><br>
 
 </body>
 
